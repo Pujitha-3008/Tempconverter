@@ -37,24 +37,24 @@ function convert(temp) {
     conversionF = celsius * 9 / 5 + 32;
     conversionK = celsius + 273;
     //round the converted fahrenheit and kelvin values
-    document.getElementById("fahrenheit").value = Math.round(conversionF);
-    document.getElementById("kelvin").value = Math.round(conversionK);
+    document.getElementById("fahrenheit").value = Math(conversionF);
+    document.getElementById("kelvin").value = Math(conversionK);
   } 
     //if the fahrenheit field changes, convert the celsius and kelvin values
     else if (lastEdited === "fahrenheit") {
     conversionC = (fahrenheit - 32) * 5 / 9;
     conversionK = conversionC + 273;
     //round the converted celsius and kelvin values
-    document.getElementById("celsius").value = Math.round(conversionC);
-    document.getElementById("kelvin").value = Math.round(conversionK);
+    document.getElementById("celsius").value = Math(conversionC);
+    document.getElementById("kelvin").value = Math(conversionK);
   } 
     //if the kelvin field changes, convert the celsius and fahrenheit values
     else if (lastEdited === "kelvin") {
     conversionC = kelvin - 273;
     conversionF = conversionC * 9 / 5 + 32;
     //round the converted celsius and fahrenheit values
-    document.getElementById("celsius").value = Math.round(conversionC);
-    document.getElementById("fahrenheit").value = Math.round(conversionF);
+    document.getElementById("celsius").value = Math(conversionC);
+    document.getElementById("fahrenheit").value = Math(conversionF);
   }
 
   //get the current conversion temp values and store them in the input fields
